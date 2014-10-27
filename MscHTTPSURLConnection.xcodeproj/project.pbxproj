@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A923AB819FE3CCD00169C84 /* MscHTTPSURLConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A923AB719FE3CCD00169C84 /* MscHTTPSURLConnection.h */; };
+		1A923ABA19FE3CCE00169C84 /* MscHTTPSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A923AB919FE3CCE00169C84 /* MscHTTPSURLConnection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A923AB219FE3CCD00169C84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1A923AB819FE3CCD00169C84 /* MscHTTPSURLConnection.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A923AB419FE3CCD00169C84 /* libMscHTTPSURLConnection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMscHTTPSURLConnection.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A923AB719FE3CCD00169C84 /* MscHTTPSURLConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MscHTTPSURLConnection.h; sourceTree = "<group>"; };
+		1A923AB919FE3CCE00169C84 /* MscHTTPSURLConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MscHTTPSURLConnection.m; sourceTree = "<group>"; };
+		1A923ABF19FE3CCE00169C84 /* MscHTTPSURLConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MscHTTPSURLConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A923AC219FE3CCE00169C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A923AB119FE3CCD00169C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A923ABC19FE3CCE00169C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A923AAB19FE3CCD00169C84 = {
+			isa = PBXGroup;
+			children = (
+				1A923AB619FE3CCD00169C84 /* MscHTTPSURLConnection */,
+				1A923AC019FE3CCE00169C84 /* MscHTTPSURLConnectionTests */,
+				1A923AB519FE3CCD00169C84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A923AB519FE3CCD00169C84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A923AB419FE3CCD00169C84 /* libMscHTTPSURLConnection.a */,
+				1A923ABF19FE3CCE00169C84 /* MscHTTPSURLConnectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A923AB619FE3CCD00169C84 /* MscHTTPSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				1A923AB719FE3CCD00169C84 /* MscHTTPSURLConnection.h */,
+				1A923AB919FE3CCE00169C84 /* MscHTTPSURLConnection.m */,
+			);
+			path = MscHTTPSURLConnection;
+			sourceTree = "<group>";
+		};
+		1A923AC019FE3CCE00169C84 /* MscHTTPSURLConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A923AC119FE3CCE00169C84 /* Supporting Files */,
+			);
+			path = MscHTTPSURLConnectionTests;
+			sourceTree = "<group>";
+		};
+		1A923AC119FE3CCE00169C84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A923AC219FE3CCE00169C84 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A923AB319FE3CCD00169C84 /* MscHTTPSURLConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A923AC519FE3CCE00169C84 /* Build configuration list for PBXNativeTarget "MscHTTPSURLConnection" */;
+			buildPhases = (
+				1A923AB019FE3CCD00169C84 /* Sources */,
+				1A923AB119FE3CCD00169C84 /* Frameworks */,
+				1A923AB219FE3CCD00169C84 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MscHTTPSURLConnection;
+			productName = MscHTTPSURLConnection;
+			productReference = 1A923AB419FE3CCD00169C84 /* libMscHTTPSURLConnection.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1A923ABE19FE3CCE00169C84 /* MscHTTPSURLConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A923AC819FE3CCE00169C84 /* Build configuration list for PBXNativeTarget "MscHTTPSURLConnectionTests" */;
+			buildPhases = (
+				1A923ABB19FE3CCE00169C84 /* Sources */,
+				1A923ABC19FE3CCE00169C84 /* Frameworks */,
+				1A923ABD19FE3CCE00169C84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MscHTTPSURLConnectionTests;
+			productName = MscHTTPSURLConnectionTests;
+			productReference = 1A923ABF19FE3CCE00169C84 /* MscHTTPSURLConnectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A923AAC19FE3CCD00169C84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Lendvai Richárd";
+				TargetAttributes = {
+					1A923AB319FE3CCD00169C84 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					1A923ABE19FE3CCE00169C84 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 1A923AAF19FE3CCD00169C84 /* Build configuration list for PBXProject "MscHTTPSURLConnection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A923AAB19FE3CCD00169C84;
+			productRefGroup = 1A923AB519FE3CCD00169C84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A923AB319FE3CCD00169C84 /* MscHTTPSURLConnection */,
+				1A923ABE19FE3CCE00169C84 /* MscHTTPSURLConnectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A923ABD19FE3CCE00169C84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A923AB019FE3CCD00169C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A923ABA19FE3CCE00169C84 /* MscHTTPSURLConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A923ABB19FE3CCE00169C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A923AC319FE3CCE00169C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A923AC419FE3CCE00169C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A923AC619FE3CCE00169C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1A923AC719FE3CCE00169C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1A923AC919FE3CCE00169C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MscHTTPSURLConnectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A923ACA19FE3CCE00169C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MscHTTPSURLConnectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A923AAF19FE3CCD00169C84 /* Build configuration list for PBXProject "MscHTTPSURLConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A923AC319FE3CCE00169C84 /* Debug */,
+				1A923AC419FE3CCE00169C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A923AC519FE3CCE00169C84 /* Build configuration list for PBXNativeTarget "MscHTTPSURLConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A923AC619FE3CCE00169C84 /* Debug */,
+				1A923AC719FE3CCE00169C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A923AC819FE3CCE00169C84 /* Build configuration list for PBXNativeTarget "MscHTTPSURLConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A923AC919FE3CCE00169C84 /* Debug */,
+				1A923ACA19FE3CCE00169C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A923AAC19FE3CCD00169C84 /* Project object */;
+}
