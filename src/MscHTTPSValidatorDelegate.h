@@ -1,5 +1,5 @@
 //
-//  MscHTTPSURLConnection.h
+//  MscHTTPSValidatorDelegate.h
 //  MscHTTPSURLConnection
 //
 //  Created by Lendvai Richárd on 2014.10.27..
@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MscHTTPSURLConnection : NSObject
+@protocol MscHTTPSValidatorDelegate <NSObject>
+
+-(BOOL)isValidServerCertificateChain:(NSArray*)chain;
 
 @end

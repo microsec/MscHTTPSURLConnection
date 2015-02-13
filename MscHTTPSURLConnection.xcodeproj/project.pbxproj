@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0D0A371A024A5D00B46930 /* MscHTTPSURLConnectionError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0A361A024A5D00B46930 /* MscHTTPSURLConnectionError.m */; };
+		1A0D0A3C1A024AE000B46930 /* MscHTTPSURLConnectionLocalException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D0A3B1A024AE000B46930 /* MscHTTPSURLConnectionLocalException.m */; };
+		1A0D0A3D1A024FA800B46930 /* MscHTTPSURLConnectionError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A0D0A351A024A5D00B46930 /* MscHTTPSURLConnectionError.h */; };
+		1A7AD56419FE4BCC009697A1 /* MscHTTPSValidatorDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A923AE619FE3FD400169C84 /* MscHTTPSValidatorDelegate.h */; };
 		1A923AB819FE3CCD00169C84 /* MscHTTPSURLConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A923AB719FE3CCD00169C84 /* MscHTTPSURLConnection.h */; };
 		1A923ABA19FE3CCE00169C84 /* MscHTTPSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A923AB919FE3CCE00169C84 /* MscHTTPSURLConnection.m */; };
 /* End PBXBuildFile section */
@@ -15,9 +19,11 @@
 		1A923AB219FE3CCD00169C84 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				1A0D0A3D1A024FA800B46930 /* MscHTTPSURLConnectionError.h in CopyFiles */,
+				1A7AD56419FE4BCC009697A1 /* MscHTTPSValidatorDelegate.h in CopyFiles */,
 				1A923AB819FE3CCD00169C84 /* MscHTTPSURLConnection.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -25,22 +31,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A0D0A351A024A5D00B46930 /* MscHTTPSURLConnectionError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MscHTTPSURLConnectionError.h; sourceTree = "<group>"; };
+		1A0D0A361A024A5D00B46930 /* MscHTTPSURLConnectionError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MscHTTPSURLConnectionError.m; sourceTree = "<group>"; };
+		1A0D0A3A1A024AE000B46930 /* MscHTTPSURLConnectionLocalException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MscHTTPSURLConnectionLocalException.h; sourceTree = "<group>"; };
+		1A0D0A3B1A024AE000B46930 /* MscHTTPSURLConnectionLocalException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MscHTTPSURLConnectionLocalException.m; sourceTree = "<group>"; };
 		1A923AB419FE3CCD00169C84 /* libMscHTTPSURLConnection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMscHTTPSURLConnection.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A923AB719FE3CCD00169C84 /* MscHTTPSURLConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MscHTTPSURLConnection.h; sourceTree = "<group>"; };
 		1A923AB919FE3CCE00169C84 /* MscHTTPSURLConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MscHTTPSURLConnection.m; sourceTree = "<group>"; };
-		1A923ABF19FE3CCE00169C84 /* MscHTTPSURLConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MscHTTPSURLConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A923AC219FE3CCE00169C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A923AE619FE3FD400169C84 /* MscHTTPSValidatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MscHTTPSValidatorDelegate.h; sourceTree = "<group>"; };
+		1AB147241A0820A20001EBB9 /* MscX509Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MscX509Common.xcodeproj; path = ../MscX509Common/MscX509Common.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A923AB119FE3CCD00169C84 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A923ABC19FE3CCE00169C84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,8 +56,8 @@
 		1A923AAB19FE3CCD00169C84 = {
 			isa = PBXGroup;
 			children = (
+				1AB147241A0820A20001EBB9 /* MscX509Common.xcodeproj */,
 				1A923AB619FE3CCD00169C84 /* MscHTTPSURLConnection */,
-				1A923AC019FE3CCE00169C84 /* MscHTTPSURLConnectionTests */,
 				1A923AB519FE3CCD00169C84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				1A923AB419FE3CCD00169C84 /* libMscHTTPSURLConnection.a */,
-				1A923ABF19FE3CCE00169C84 /* MscHTTPSURLConnectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,24 +75,14 @@
 			children = (
 				1A923AB719FE3CCD00169C84 /* MscHTTPSURLConnection.h */,
 				1A923AB919FE3CCE00169C84 /* MscHTTPSURLConnection.m */,
+				1A923AE619FE3FD400169C84 /* MscHTTPSValidatorDelegate.h */,
+				1A0D0A351A024A5D00B46930 /* MscHTTPSURLConnectionError.h */,
+				1A0D0A361A024A5D00B46930 /* MscHTTPSURLConnectionError.m */,
+				1A0D0A3A1A024AE000B46930 /* MscHTTPSURLConnectionLocalException.h */,
+				1A0D0A3B1A024AE000B46930 /* MscHTTPSURLConnectionLocalException.m */,
 			);
-			path = MscHTTPSURLConnection;
-			sourceTree = "<group>";
-		};
-		1A923AC019FE3CCE00169C84 /* MscHTTPSURLConnectionTests */ = {
-			isa = PBXGroup;
-			children = (
-				1A923AC119FE3CCE00169C84 /* Supporting Files */,
-			);
-			path = MscHTTPSURLConnectionTests;
-			sourceTree = "<group>";
-		};
-		1A923AC119FE3CCE00169C84 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1A923AC219FE3CCE00169C84 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = MscHTTPSURLConnection;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,23 +105,6 @@
 			productReference = 1A923AB419FE3CCD00169C84 /* libMscHTTPSURLConnection.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1A923ABE19FE3CCE00169C84 /* MscHTTPSURLConnectionTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A923AC819FE3CCE00169C84 /* Build configuration list for PBXNativeTarget "MscHTTPSURLConnectionTests" */;
-			buildPhases = (
-				1A923ABB19FE3CCE00169C84 /* Sources */,
-				1A923ABC19FE3CCE00169C84 /* Frameworks */,
-				1A923ABD19FE3CCE00169C84 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MscHTTPSURLConnectionTests;
-			productName = MscHTTPSURLConnectionTests;
-			productReference = 1A923ABF19FE3CCE00169C84 /* MscHTTPSURLConnectionTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,9 +115,6 @@
 				ORGANIZATIONNAME = "Lendvai Richárd";
 				TargetAttributes = {
 					1A923AB319FE3CCD00169C84 = {
-						CreatedOnToolsVersion = 6.0.1;
-					};
-					1A923ABE19FE3CCE00169C84 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
@@ -160,34 +132,18 @@
 			projectRoot = "";
 			targets = (
 				1A923AB319FE3CCD00169C84 /* MscHTTPSURLConnection */,
-				1A923ABE19FE3CCE00169C84 /* MscHTTPSURLConnectionTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		1A923ABD19FE3CCE00169C84 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A923AB019FE3CCD00169C84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0D0A371A024A5D00B46930 /* MscHTTPSURLConnectionError.m in Sources */,
+				1A0D0A3C1A024AE000B46930 /* MscHTTPSURLConnectionLocalException.m in Sources */,
 				1A923ABA19FE3CCE00169C84 /* MscHTTPSURLConnection.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A923ABB19FE3CCE00169C84 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +153,7 @@
 		1A923AC319FE3CCE00169C84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -227,17 +183,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../MscX509Common/include";
 			};
 			name = Debug;
 		};
 		1A923AC419FE3CCE00169C84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -261,9 +218,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../MscX509Common/include";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -271,48 +229,24 @@
 		1A923AC619FE3CCE00169C84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Debug;
 		};
 		1A923AC719FE3CCE00169C84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1A923AC919FE3CCE00169C84 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MscHTTPSURLConnectionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		1A923ACA19FE3CCE00169C84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MscHTTPSURLConnectionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -335,14 +269,7 @@
 				1A923AC719FE3CCE00169C84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		1A923AC819FE3CCE00169C84 /* Build configuration list for PBXNativeTarget "MscHTTPSURLConnectionTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A923AC919FE3CCE00169C84 /* Debug */,
-				1A923ACA19FE3CCE00169C84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
