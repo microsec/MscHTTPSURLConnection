@@ -13,7 +13,32 @@
 		1A7AD56419FE4BCC009697A1 /* MscHTTPSValidatorDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A923AE619FE3FD400169C84 /* MscHTTPSValidatorDelegate.h */; };
 		1A923AB819FE3CCD00169C84 /* MscHTTPSURLConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A923AB719FE3CCD00169C84 /* MscHTTPSURLConnection.h */; };
 		1A923ABA19FE3CCE00169C84 /* MscHTTPSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A923AB919FE3CCE00169C84 /* MscHTTPSURLConnection.m */; };
+		1AFDF8711A92259100F96EA9 /* libMscX509Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A11AA481A8DE378000FCBC1 /* libMscX509Common.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A11AA471A8DE378000FCBC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB147241A0820A20001EBB9 /* MscX509Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58821A11195031B100AB3D4D;
+			remoteInfo = MscX509Common;
+		};
+		1A11AA491A8DE378000FCBC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB147241A0820A20001EBB9 /* MscX509Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58805838195423E100FAB43C;
+			remoteInfo = MscX509CommonTests;
+		};
+		6D06964B1A97584300E0FA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB147241A0820A20001EBB9 /* MscX509Common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 58821A10195031B100AB3D4D;
+			remoteInfo = MscX509Common;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1A923AB219FE3CCD00169C84 /* CopyFiles */ = {
@@ -47,12 +72,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFDF8711A92259100F96EA9 /* libMscX509Common.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A11AA431A8DE377000FCBC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A11AA481A8DE378000FCBC1 /* libMscX509Common.a */,
+				1A11AA4A1A8DE378000FCBC1 /* MscX509CommonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1A923AAB19FE3CCD00169C84 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +134,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6D06964C1A97584300E0FA7F /* PBXTargetDependency */,
 			);
 			name = MscHTTPSURLConnection;
 			productName = MscHTTPSURLConnection;
@@ -129,12 +165,35 @@
 			mainGroup = 1A923AAB19FE3CCD00169C84;
 			productRefGroup = 1A923AB519FE3CCD00169C84 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1A11AA431A8DE377000FCBC1 /* Products */;
+					ProjectRef = 1AB147241A0820A20001EBB9 /* MscX509Common.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1A923AB319FE3CCD00169C84 /* MscHTTPSURLConnection */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1A11AA481A8DE378000FCBC1 /* libMscX509Common.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMscX509Common.a;
+			remoteRef = 1A11AA471A8DE378000FCBC1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A11AA4A1A8DE378000FCBC1 /* MscX509CommonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MscX509CommonTests.xctest;
+			remoteRef = 1A11AA491A8DE378000FCBC1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A923AB019FE3CCD00169C84 /* Sources */ = {
@@ -148,6 +207,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D06964C1A97584300E0FA7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MscX509Common;
+			targetProxy = 6D06964B1A97584300E0FA7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1A923AC319FE3CCE00169C84 /* Debug */ = {
